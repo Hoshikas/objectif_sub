@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .bar-container {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .bar {
+        height: 100%;
+        width: 0%;
+        background-image: url('https://zupimages.net/viewer.php?id=23/05/nqaz.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: width 2s linear;
+      }
+
+      .bar.filled {
+        background-image: url('https://zupimages.net/viewer.php?id=23/05/nqaz.png');
+        width: 100%;
+      }
+
+      .sub-goal-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+        position: relative;
+      }
+
+      .tea-cup {
+        width: 150px;
+        height: 150px;
+        background-image: url("https://zupimages.net/viewer.php?id=23/05/nqaz.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+      .tea-level {
+        width: 100%;
+        background-color: #ffcc33;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      .sub-goal-text {
+        color: #333;
+        font-size: 36px;
+        font-weight: bold;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bar-container">
+      <div class="bar"></div>
+    </div>
+    <div class="sub-goal-container">
+      <div class="tea-cup">
+        <div class="tea-level" style="height: 75%;"></div>
+      </div>
+      <div class="sub-goal-text">75% vers notre objectif de souscription</div>
+    </div>
+  </body>
+</html>
